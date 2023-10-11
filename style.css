@@ -20,7 +20,8 @@ button {
     border-style: solid;
 }
 
-.grid div {
+/*.grid div {
+    
     height: 43.75px;
     width: 43.75px;
 }
