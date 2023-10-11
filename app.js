@@ -11,11 +11,6 @@ createGrid();
 
 const gridSquare = document.querySelectorAll('.grid-square');
 
-/*function colourGridSquare (square) {
-    square.setAttribute('style', 'background: blue;');
-}
-*/
-
 gridSquare.forEach((square) => {
     square.addEventListener('mouseover', () => {
         square.setAttribute('style', 'background: blue;');

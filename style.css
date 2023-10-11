@@ -4,6 +4,12 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    flex-direction: column;
+}
+
+button {
+    padding: 6px 12px;
+    margin: 12px 0;
 }
 
 .grid {
