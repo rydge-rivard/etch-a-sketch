@@ -5,7 +5,6 @@ function createBaseGrid (gridLength) {
     numberOfGridSquares = gridLength ** 2;
     for (let i = 0; i < numberOfGridSquares; i++) {
         const div = document.createElement('div');
-        //div.setAttribute('style', `height: ${700/gridLength}px; width: ${700/gridLength}px;`);
         div.style.height = 700/gridLength + "px";
         div.style.width = 700/gridLength + "px";
         div.classList.add('grid-square');
@@ -19,13 +18,6 @@ function createBaseGrid (gridLength) {
 let gridSquare = document.querySelectorAll('.grid-square');
 const btn = document.querySelector('.select-grid');
 btn.addEventListener('click', createNewGrid);
-
-/*gridSquare.forEach((square) => {
-    square.addEventListener('mouseover', () => {
-        square.setAttribute('style', `background: blue;`)
-    });
-});
-*/
 
 function createNewGrid(gridLength) {
     gridLength = prompt('How many squares per side should the grid be?');
